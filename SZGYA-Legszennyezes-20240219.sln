@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SZGYA-Legszennyezes-20240219", "SZGYA-Legszennyezes-20240219\SZGYA-Legszennyezes-20240219.csproj", "{A20EEA9F-284B-4A43-A09A-A0E774C88802}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A20EEA9F-284B-4A43-A09A-A0E774C88802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20EEA9F-284B-4A43-A09A-A0E774C88802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20EEA9F-284B-4A43-A09A-A0E774C88802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20EEA9F-284B-4A43-A09A-A0E774C88802}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15EEE90B-B326-4B39-AC63-B59F46758701}
+	EndGlobalSection
+EndGlobal
