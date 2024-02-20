@@ -45,6 +45,27 @@ namespace SZGYA_Legszennyezes_20240219
             var hatvanalatt = legadatok.FirstOrDefault(l => l.Value.All(n => n < 60));
             Console.WriteLine($"\n7.feladat \n\t{(hatvanalatt.Key != 0 ? $"{hatvanalatt.Key}" : "[HIBA] Nincs ilyen nap")}");
 
+            //--------------------
+            //-------SZORGALMI----
+            //--------------------
+
+            //8
+            Console.WriteLine($"\n8.feladat: {legadatok.First().Value.IndexOf(legadatok.First().Value.Max()) + 1}");
+
+            //9 
+            Console.WriteLine($"\n9.feladat: {legadatok.Average(l => l.Value[11])}");
+
+            //10
+            var felek = legadatok.Chunk(15);
+            Console.WriteLine($"\n10.feladat: {(felek.First().Sum(l => l.Value.Sum()) > felek.Last().Sum(l => l.Value.Sum()) ? "az első" : "a második")} volt nagyobb");
+
+            //11 
+            var gyujto = legadatok.Where(l => legadatok.Average(l => l.Value.Sum()) - l.Value.Sum() > 100);
+            Console.WriteLine("\n11.feladat");
+            foreach (var nap in gyujto)
+            {
+                Console.WriteLine($"\t{nap.Key}");
+            }
         }
     }
 }
